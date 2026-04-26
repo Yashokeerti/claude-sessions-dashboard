@@ -12,15 +12,19 @@ class ClaudeSessionsDashboard < Formula
     libexec.install Dir["src/*"]
     libexec.install "pyproject.toml"
 
-    # Create wrapper script
-    (bin/"claude-sessions").write <<~EOS
-      #!/bin/bash
-      exec "#{Formula["python@3"].opt_bin}/python3" -c "
+    # Create Python entry point script
+    (libexec/"run.py").write <<~EOS
+      #!/usr/bin/env python3
       import sys
       sys.path.insert(0, '#{libexec}/claude_sessions_dashboard')
       from dashboard import main
       main()
-      " "$@"
+    EOS
+
+    # Create wrapper script
+    (bin/"claude-sessions").write <<~EOS
+      #!/bin/bash
+      exec "#{Formula["python@3"].opt_bin}/python3" "#{libexec}/run.py" "$@"
     EOS
   end
 
