@@ -56,7 +56,7 @@ claude-sessions
 ### Option 2: From source
 
 ```bash
-git clone https://github.com/yashokirti/claude-sessions-dashboard.git
+git clone https://github.com/Yashokeerti/claude-sessions-dashboard.git
 cd claude-sessions-dashboard
 make run
 ```
@@ -64,7 +64,7 @@ make run
 ### Option 3: Direct run (no install)
 
 ```bash
-git clone https://github.com/yashokirti/claude-sessions-dashboard.git
+git clone https://github.com/Yashokeerti/claude-sessions-dashboard.git
 cd claude-sessions-dashboard
 python -m claude_sessions_dashboard
 ```
@@ -72,14 +72,20 @@ python -m claude_sessions_dashboard
 ### Option 4: Homebrew (macOS)
 
 ```bash
-brew tap yashokirti/claude-sessions-dashboard
+brew tap Yashokeerti/claude-sessions-dashboard
 brew install claude-sessions-dashboard
+```
+
+Then run:
+
+```bash
+claude-sessions
 ```
 
 ### Option 5: Native macOS app
 
 ```bash
-git clone https://github.com/yashokirti/claude-sessions-dashboard.git
+git clone https://github.com/Yashokeerti/claude-sessions-dashboard.git
 cd claude-sessions-dashboard
 make build-mac
 ```
@@ -167,7 +173,7 @@ claude-sessions-dashboard/
 
 ```bash
 # Clone
-git clone https://github.com/yashokirti/claude-sessions-dashboard.git
+git clone https://github.com/Yashokeerti/claude-sessions-dashboard.git
 cd claude-sessions-dashboard
 
 # Install in development mode

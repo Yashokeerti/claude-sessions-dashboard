@@ -33,9 +33,9 @@ classifiers = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/yashokirti/claude-sessions-dashboard"
-Repository = "https://github.com/yashokirti/claude-sessions-dashboard"
-Issues = "https://github.com/yashokirti/claude-sessions-dashboard/issues"
+Homepage = "https://github.com/Yashokeerti/claude-sessions-dashboard"
+Repository = "https://github.com/Yashokeerti/claude-sessions-dashboard"
+Issues = "https://github.com/Yashokeerti/claude-sessions-dashboard/issues"
 
 [project.scripts]
 claude-sessions = "claude_sessions_dashboard.dashboard:main"
