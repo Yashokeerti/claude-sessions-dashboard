@@ -2,9 +2,16 @@
 
 A local web dashboard to view, search, and manage all your [Claude Code](https://claude.ai/claude-code) sessions — both active and inactive.
 
-![Dashboard Screenshot](assets/app-icon.png)
+![Dashboard Overview](assets/dashboard-overview.png)
 
-> **Add a screenshot of your dashboard here** — run the app and take a screenshot to replace the icon above.
+### Filters and Search
+![Filters and Search](assets/dashboard-filters.png)
+
+### Column Visibility Toggle
+![Column Toggle](assets/dashboard-columns-toggle.png)
+
+### Native macOS App
+![macOS App](assets/dashboard-macos-app.png)
 
 ## Features
 
@@ -13,6 +20,8 @@ A local web dashboard to view, search, and manage all your [Claude Code](https:/
 - **Search** — Full-text search across session ID, project path, name, and messages
 - **Filters** — Filter by status (active/inactive), date range, project, and source (CLI/Desktop)
 - **Click to resume** — Click any session ID to copy the `claude --resume` command, or click the play button to open Terminal directly
+- **Column resizing** — Drag column edges to resize any column
+- **Column visibility** — Show/hide columns via the Columns dropdown
 - **Column sorting** — Sort by any column
 - **Auto-refresh** — Dashboard refreshes every 30 seconds
 - **JSON API** — Programmatic access at `/api/sessions`
