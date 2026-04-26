@@ -1,0 +1,44 @@
+[build-system]
+requires = ["setuptools>=64", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "claude-sessions-dashboard"
+version = "1.0.0"
+description = "A local web dashboard to view and manage all your Claude Code sessions"
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.8"
+authors = [
+    {name = "Yashokirti Tripathi"},
+]
+keywords = ["claude", "claude-code", "dashboard", "sessions", "anthropic"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Web Environment",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: MacOS",
+    "Operating System :: POSIX :: Linux",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
+    "Topic :: Software Development :: User Interfaces",
+    "Topic :: Utilities",
+]
+
+[project.urls]
+Homepage = "https://github.com/yashokirti/claude-sessions-dashboard"
+Repository = "https://github.com/yashokirti/claude-sessions-dashboard"
+Issues = "https://github.com/yashokirti/claude-sessions-dashboard/issues"
+
+[project.scripts]
+claude-sessions = "claude_sessions_dashboard.dashboard:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
