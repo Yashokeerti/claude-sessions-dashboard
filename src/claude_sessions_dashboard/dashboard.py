@@ -1412,10 +1412,21 @@ end tell
 
 
 def main():
-    server = HTTPServer(("127.0.0.1", PORT), DashboardHandler)
+    import argparse
+    parser = argparse.ArgumentParser(
+        description="Claude Sessions Dashboard - view and manage Claude Code sessions"
+    )
+    parser.add_argument(
+        "--port", type=int, default=PORT,
+        help=f"Port to run the dashboard on (default: {PORT})"
+    )
+    args = parser.parse_args()
+
+    port = args.port
+    server = HTTPServer(("127.0.0.1", port), DashboardHandler)
     print(f"\n  Claude Sessions Dashboard")
     print(f"  ─────────────────────────")
-    print(f"  URL:  http://localhost:{PORT}")
+    print(f"  URL:  http://localhost:{port}")
     print(f"  Stop: Ctrl+C\n")
     try:
         server.serve_forever()
