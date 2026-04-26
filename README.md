@@ -2,7 +2,11 @@
 
 A local web dashboard to view, search, and manage all your [Claude Code](https://claude.ai/claude-code) sessions — both active and inactive.
 
+### Dashboard Overview
 ![Dashboard Overview](assets/dashboard-overview.png)
+
+### Native macOS App
+![Native macOS App](assets/dashboard-macos-native.png)
 
 ### Filters and Search
 ![Filters and Search](assets/dashboard-filters.png)
@@ -10,8 +14,8 @@ A local web dashboard to view, search, and manage all your [Claude Code](https:/
 ### Column Visibility Toggle
 ![Column Toggle](assets/dashboard-columns-toggle.png)
 
-### Native macOS App
-![macOS App](assets/dashboard-macos-app.png)
+### Local Web Application
+![Local Web App](assets/dashboard-local-web.png)
 
 ## Features
 
